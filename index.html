@@ -42,6 +42,11 @@
                 <img :src="url[Math.abs(currentNumber) % url.length]" style="width: 100%; height: 30em; margin-top: 1em;" v-on:mouseover="stopRotation" v-on:mouseout="startRotation">
                 <a class="prev" v-on:click="prev" style="color: white">&#10094;</a>
                 <a class="next" v-on:click="next" style="color: white">&#10095;</a>
+                <div style="text-align:center">
+                  <span class="dot active" v-on:click="dot1"></span> 
+                  <span class="dot active" v-on:click="dot2"></span> 
+                  <span class="dot active" v-on:click="dot3"></span> 
+                </div>
             </div>
             <div class="content1" style="width: 100%">
                 <p>

@@ -27,3 +27,21 @@
   position: relative;
   margin: auto;
 }
+
+.content1 {
+  border-style: ridge;
+  border: 3px;
+  border-color: black;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 4em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+.design {
+  max-width: 1200px;
+  background-color: #343a40;
+  margin: auto;
+}

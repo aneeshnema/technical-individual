@@ -1,8 +1,8 @@
 new Vue({
     el: '#iitin',
     data: {
-        url: ['img/elyse.png','img/matthew.png','img/molly.png'],
-        currentNumber: 0
+        url: ['img/elyse.jpeg','img/matthew.jpg','img/molly.jpg'],
+        currentNumber: 0,
     },
 
     mounted: function () {

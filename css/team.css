@@ -1,6 +1,7 @@
 
 .team1 {
-	background-color: #555;
+	margin-top: 1em;
+	background-color: white;
 }
 
 .text {
@@ -8,9 +9,9 @@
 	text-align: center;
 	margin-top: 0em;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.8em;
+	font-size: 2.8em;
 	margin-bottom: 1em;
-	color: white;
+	color: black;
 }
 
 .inline {
@@ -31,12 +32,27 @@
 
 .name {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: 1.5em;
 }
 
 img {
 	border-radius: 50%;
 }
 
+.description {
+	font-size: 0.7em;
+}
+
+.team3 {
+	text-align: center;
+	overflow: hidden;
+	align-content: center;
+}
+
+.inline-1 {
+	display: inline-block;
+	margin-bottom: 30px;
+	padding: 2em;
+}

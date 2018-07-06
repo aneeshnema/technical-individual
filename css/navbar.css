@@ -1,11 +1,9 @@
-.navbar-brand{
-  color: black;
+.navbar {
   font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-brand {
   font-weight: bold;
   letter-spacing: 0.15em;
 }
-
-.nav-link {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
+/*# sourceMappingURL=navbar.css.map */

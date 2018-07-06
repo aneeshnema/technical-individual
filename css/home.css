@@ -1,0 +1,104 @@
+@media (max-width: 720px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0em;
+}
+
+.overlay {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+#main {
+  background-image: url("/img/home/main.jpg");
+  height: 100%;
+}
+
+#main #mainOverlay {
+  background-color: rgba(25, 118, 210, 0.75);
+}
+
+.display-3 {
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 0.95em;
+}
+
+#blogposts {
+  padding: 5em 0em;
+}
+
+#blogposts .display-3 {
+  padding: 0.25em 0em;
+}
+
+#blogposts .post {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+          box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+#blogposts .post h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#secondary {
+  background-image: url("/img/home/other.jpg");
+  height: 100%;
+}
+
+#secondary #secondaryOverlay {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5em 0em;
+}
+
+#secondary #secondaryOverlay .display-3 {
+  padding: 0.25em 0em;
+}
+
+#secondary #carouselId .carousel-inner {
+  border-radius: 1.25em;
+}
+
+#secondary #carouselId .carousel-caption {
+  top: 10%;
+  text-align: left;
+}
+
+#secondary #carouselId .display-3 {
+  font-size: 2.5em;
+  letter-spacing: 0px;
+}
+
+#secondary #carouselId p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+#footer h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  padding: 0.25em 0em;
+}
+
+#footer i {
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=home.css.map */

@@ -38,7 +38,10 @@
     </div>
     <div class="team1" id="app">
         <div class="text">
-            MEET THE TEAM
+            <strong>MEET THE TEAM</strong>
+        </div>
+        <div class="team3">
+            <head-component v-for="head in heads" :head="head"/>
         </div>
         <div class="team2">
             <member-component v-for="member in members" :member="member"/>

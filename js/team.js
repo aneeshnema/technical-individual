@@ -1,57 +1,57 @@
 const members = [
   {
     id: 1,
-    name: "alpha",
+    name: "GVS AKHIL",
     description: "Competitive Coding",
-    img: "img/team/matthew.png",
-    year: "First Year",
-    linkGit: "",
+    img: "https://avatars0.githubusercontent.com/u/21010250?s=460&v=4",
+    year: "Third Year",
+    linkGit: "https://github.com/vicennial",
     linkLin: ""
   },
   {
     id: 2,
-    name: "beta",
-    description: "Competitive Coding",
-    img: "img/team/molly.png",
-    year: "Second Year",
-    linkGit: "",
+    name: "ARJUN SRIVASTAVA",
+    description: "MACHINE LEARNING",
+    img: "https://avatars0.githubusercontent.com/u/9380108?s=460&v=4",
+    year: "Third Year",
+    linkGit: "https://github.com/arjunbazinga",
     linkLin: ""
   },
   {
     id: 3,
-    name: "gamma",
-    description: "Development",
-    img: "img/team/elyse.png",
+    name: "MOHIT NATHRANI",
+    description: "WEB DEVELOPMENT AND COMPETITIVE PROGRAMMING",
+    img: "https://avatars2.githubusercontent.com/u/30346159?s=460&v=4",
     contact: "9999999999",
-    year: "Second Year",
-    linkGit: "",
+    year: "Third Year",
+    linkGit: "https://github.com/Mohit-Nathrani",
     linkLin: ""
   },
   {
     id: 4,
-    name: "alpha",
-    description: "Cyber Security",
-    img: "img/team/matthew.png",
+    name: "PRIYANSHU",
+    description: "WEB DEVELOPMENT AND COMPETITIVE PROGRAMMING",
+    img: "https://avatars1.githubusercontent.com/u/28222108?s=460&v=4",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/priyanshuvarsh",
     linkLin: ""
   },
   {
     id: 5,
-    name: "alpha",
-    description: "Cyber Security",
-    img: "img/team/matthew.png",
+    name: "JOSHI NIRANJAN",
+    description: "WEB AND SOFTWARE DEVELOPMENT",
+    img: "https://avatars2.githubusercontent.com/u/29325626?s=460&v=4",
     year: "First Year",
-    linkGit: "",
+    linkGit: "https://github.com/Niranjan-J",
     linkLin: ""
   },
   {
     id: 6,
-    name: "alpha",
-    description: "Development",
-    img: "img/team/matthew.png",
+    name: "DAANISH MAHAJAN",
+    description: "COMPETITIVE PROGRAMMING",
+    img: "https://avatars0.githubusercontent.com/u/19322630?s=460&v=4",
     year: "First Year",
-    linkGit: "",
+    linkGit: "https://github.com/FireWithin",
     linkLin: ""
   }
 ];
@@ -59,22 +59,22 @@ const members = [
 const heads = [
   {
     id: 1,
-    name: "alpha",
+    name: "Kanishkar J",
     description: "Club Head",
-    img: "img/team/matthew.png",
-    contact: "9999999999",
+    img: "https://avatars2.githubusercontent.com/u/22411349?s=460&v=4",
+    contact: "9902847087",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/kanishkarj/",
     linkLin: ""
   },
   {
     id: 2,
-    name: "beta",
+    name: "Kumar Abhinav",
     description: "Club Head",
-    img: "img/team/molly.png",
-    contact: "9999999999",
+    img: "https://avatars0.githubusercontent.com/u/10851701",
+    contact: "9643295944",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/Abhinav2812",
     linkLin: ""
   }
 ];

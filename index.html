@@ -19,39 +19,61 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
         crossorigin="anonymous">
-    <style>
+       <style>
         .blog-content {
             max-height: 100px;
             overflow: hidden;
-            font-size: 0.7em;
+            position: relative;
         }
-
+        .blog-content:after {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 90%);
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4em;
+        }
         .blog-content>figure>img {
             width: 100%;
         }
-
         .modal-body>figure>img {
             width: 100%;
         }
-
         .modal-body>figure>figure>img {
             width: 100%;
         }
-
         @media only screen and (min-width: 600px) {
             .mybeautifulclass {
                 max-height: 10em;
                 overflow: hidden;
             }
+            .blog-content {
+                font-size: 0.7em;
+            }
+            .cute-btn {
+              padding-left: 3em;
+              padding-right: 3em;
+            }
         }
-
         @media only screen and (max-width: 600px) {
             .card:hover {
                 transform: scale(1.0) !important;
             }
-	    .display-3{
-	    	font-size:4em;
-	    }
+            .display-3 {
+                font-size: 4em;
+            }
+            .cute-btn {
+              display: block;
+              width: 100%;
+              text-align: center;
+              border-radius: 0px !important;
+            }
+        }
+        .cute-btn {
+          border-radius: 0px !important;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     </style>
 </head>
@@ -59,25 +81,9 @@
 <body>
     <div class="container-fluid parallax" id="main">
         <div class="overlay" id="mainOverlay">
-            <nav class="navbar navbar-expand-sm navbar-light container">
-                <a class="navbar-brand text-white" href="index.html">P;CLUB</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mr-5">
-                            <a class="naav" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item mr-5">
-                            <a class="naav" href="projects.html">PROJECTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="naav" href="team.html">TEAM</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="container" id="app">
+                <navbar-component />
+            </div>
             <div class="container">
                 <h1 class="display-3 text-white" style="padding-top: 1.5em">THE
                     <br>PROGRAMM;NG CLUB</h1>
@@ -98,64 +104,58 @@
             <div class="row" id="blog">
                 <blog-component v-for="post in posts" :post="post"></blog-component>
             </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-10">
+                    <br>
+                    <a target="_blank" href="https://medium.com/the-programming-club-iit-indore/" class="btn btn-primary btn-lg cute-btn">See More</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid parallax" id="secondary">
-        <div class="overlay" id="secondaryOverlay">
+        <div class="overlay lighten" id="secondaryOverlay">
             <div class="container">
                 <svg width="42" height="14">
                     <rect width="48" height="12" fill="rgb(96, 111, 200)"></rect>
                 </svg>
                 <h1 class="display-3 text-dark">Events</h1>
-                <div id="carouselId" class="carousel slide carousel-fade" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselId" data-slide-to="1"></li>
-                        <li data-target="#carouselId" data-slide-to="2"></li>
-                    </ol>
-                    <event-component></event-component>
-                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                <event-component></event-component>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid parallax slack" id="secondary">
+        <div class="text-white" id="secondaryOverlay">
+            <div class="container">
+                <svg width="42" height="14">
+                    <rect width="48" height="12" fill="white"></rect>
+                </svg>
+                <h1 class="display-3">Lorem Ipsum</h1>
+                <div class="container slack-content" style="width: 100%;">
+                    <div class="container" style="width: 100%; margin-top: 1em; padding: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="container" style="width: 100%; margin-top: 1.5em; padding: 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="" id="" style="margin-top: 1.5em; padding: 0;text-align: center;">
+                        <a href="index.html" class="btn btn-primary btn-lg cute-btn" role="button" aria-pressed="true">
+                                Join US!
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white py-1" id="footer">
-        <div class="container">
-            <h3 class="py-2">Connect with us</h3>
-            <ul class="list-inline">
-                <li class="list-inline-item pb-3">
-                    <a target="_blank" href="https://github.com/pclubiiti">
-                        <i class="fab fa-github"></i>
-                        <p class="pl-2">view our work</p>
-                    </a>
-                </li>
-                <li class="list-inline-item pb-3">
-                    <a target="_blank" href="https://www.facebook.com/pclubiiti/">
-                        <i class="fab fa-facebook"></i>
-                        <p class="pl-2">follow us on facebook</p>
-                    </a>
-                </li>
-                <li class="list-inline-item pb-3">
-                    <a target="_blank" href="mailto:progclubiiti@iiti.ac.in">
-                        <i class="far fa-envelope"></i>
-                        <p class="pl-2">mail us</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div id="foot">
+        <footer-component />
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="vendor/vue/vue.js"></script>
     <script src="js/events.js"></script>
-    <script src="js/home.js"></script>
     <script type="text/javascript" src="js/blog.js"></script>
+    <script src="js/home.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>

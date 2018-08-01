@@ -10,11 +10,11 @@ const members = [
   },
   {
     id: 2,
-    name: "ARJUN SRIVASTAVA",
-    description: "MACHINE LEARNING",
-    img: "https://avatars0.githubusercontent.com/u/9380108?s=460&v=4",
+    name: "ASHUTOSH BANG",
+    description: "COMPETITIVE PROGRAMMING",
+    img: "https://avatars0.githubusercontent.com/u/24517273?s=460&v=4",
     year: "Third Year",
-    linkGit: "https://github.com/arjunbazinga",
+    linkGit: "https://github.com/ashutoshbang",
     linkLin: ""
   },
   {
@@ -81,20 +81,23 @@ const heads = [
 
 Vue.component("member-component", {
   template: `
-	<div class="col-lg-3">
-		<div class="card">
-			<div class="profile-container">
-				<img class="card-img-top" :src="member.img" alt="Card image cap">
-			</div>
-  			<div class="card-body">
-    			<h5 class="card-title">{{member.name}}</h5>
-				  <p class="card-text">{{member.description}}</p>
-				  <p class="card-text mb-2">{{member.year}}</p>
-          <a :href="member.linkGit"><i class="fab fa-github"></i> </a>
-          <a :href="member.linkLin"><i class="fab fa-linkedin"></i> </a>
-  			</div>
-		</div>
-	</div>
+  <div class="col-lg-3 d-flex align-items-stretch" style="flex: 0 0 100%;">
+    <div class="card" style="width: 100%;">
+      <div class="profile-container">
+        <img class="card-img-top" :src="member.img" alt="Card image cap">
+      </div>
+        <div class="card-body h-100 d-flex justify-content-center align-items-stretch align-content-stretch" style="width: 100%; flex-direction: column;">
+
+           <h5 class="card-title d-flex align-items-center justify-content-center" style="flex: 1 1 auto;">{{member.name}}</h5>
+            <p class="card-text d-flex align-items-center justify-content-center"  style="flex: 1 1 auto">{{member.description}}</p>
+          <p class="card-text mb-2 d-flex justify-content-center align-items-center" style="flex: 1 1 auto;">{{member.year}}</p>
+          <div class="d-flex align-items-center justify-content-center" style="flex: 1 1 auto; flex-direction: row;">
+          <a :href="member.linkGit"><i class="fab fa-github d-flex justify-content-center align-items-center" style="flex: 1 1 auto;  padding: 0 0.1em;"></i> </a>
+          <a :href="member.linkLin"><i class="fab fa-linkedin d-flex justify-content-center align-items-center"  style="flex: 1 1 auto; padding: 0 0.1em;"></i> </a>
+          </div>
+        </div>
+    </div>
+  </div>
 	`,
   props: {
     member: Object
@@ -103,20 +106,22 @@ Vue.component("member-component", {
 
 Vue.component("head-component", {
   template: `
-	<div class="col-lg-4">
-		<div class="card">
-			<div class="profile-container">
-				<img class="card-img-top" :src="head.img" alt="Card image cap">
-			</div>
-  			<div class="card-body">
-	    		<h5 class="card-title">{{head.name}}</h5>
-				  <p class="card-text">{{head.description}}</p>
-				  <p class="card-text mb-2">{{head.year}}</p>
-          <a :href="head.linkGit"><i class="fab fa-github"></i> </a>
-          <a :href="head.linkLin"><i class="fab fa-linkedin"></i> </a>
-  			</div>
-		</div>
-	</div>
+	<div class="col-lg-4 d-flex align-items-stretch" style="flex: 0 0 100%;">
+    <div class="card" style="width: 100%;">
+      <div class="profile-container">
+        <img class="card-img-top" :src="head.img" alt="Card image cap">
+      </div>
+        <div class="card-body h-100 d-flex justify-content-center align-items-stretch align-content-stretch" style="width: 100%; flex-direction: column;">
+          <h5 class="card-title d-flex align-items-center justify-content-center" style="flex: 1 1 auto;">{{head.name}}</h5>
+          <p class="card-text d-flex align-items-center justify-content-center" style="flex: 1 1 auto;">{{head.description}}</p>
+          <p class="card-text mb-2 d-flex justify-content-center" style="flex: 1 1 auto;">{{head.year}}</p>
+          <div class="d-flex align-items-center justify-content-center" style="flex: 1 1 auto; flex-direction: row;">
+          <a :href="head.linkGit"><i class="fab fa-github d-flex justify-content-center"  style="flex: 1 1 auto; padding: 0 0.1em;"></i> </a>
+          <a :href="head.linkLin"><i class="fab fa-linkedin d-flex justify-content-center"  style="flex: 1 1 auto; padding: 0 0.1em;"></i> </a>
+          </div>
+        </div>
+    </div>
+  </div>
 	`,
   props: {
     head: Object

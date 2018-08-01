@@ -1,7 +1,5 @@
 Vue.component("blog-component", {
-    props: {
-        post: Object
-    },
+    props: ['post'],
     template: `
     <div class="col-lg-4 d-flex align-items-stretch">
         <div class="card">
@@ -25,9 +23,7 @@ Vue.component("blog-component", {
 });
 
 Vue.component("blog-component-modal", {
-    props: {
-        post: Object
-    },
+    props: ['post'],
     template: `
     <div class="modal fade" :id="post.guid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -46,3 +42,4 @@ Vue.component("blog-component-modal", {
         </div>
     `
 });
+

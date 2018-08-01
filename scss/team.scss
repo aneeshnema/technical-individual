@@ -23,11 +23,12 @@ body {
   color: rgba(51, 57, 63, 1);
   border-radius: 2em;
   margin-bottom: 1em;
+  font-size: 1.8em;
   box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
   .card-title {
     font-family: $montserrat;
+    font-size: 1.8em;
     font-weight: bold;
-    font-size: 2em;
     margin-bottom: 0.12em;
   }
   .card-text {
@@ -40,6 +41,10 @@ body {
     img {
       border-radius: 50%;
     }
+  }
+
+  .card-body{
+    font-size:15px;
   }
 }
 #app {
